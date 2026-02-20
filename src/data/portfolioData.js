@@ -64,6 +64,7 @@ export const experience = [
         current: true,
         color: "from-sky-500 to-cyan-400",
         icon: "🏗️",
+        logo: "https://unavatar.io/vanderlande.com",
         highlights: [
             "Understanding and designing services based on stakeholder requirements.",
             "Working with stakeholders for third-party API integrations.",
@@ -83,6 +84,7 @@ export const experience = [
         current: false,
         color: "from-violet-500 to-purple-400",
         icon: "💡",
+        logo: "https://unavatar.io/sincrodigital.com",
         highlights: [
             "Collaborated with cross-functional teams to develop solutions meeting needs of all stakeholders.",
             "Conducted customer interviews to identify areas for improvement.",
@@ -103,6 +105,7 @@ export const experience = [
         current: false,
         color: "from-emerald-500 to-teal-400",
         icon: "🗺️",
+        logo: "https://unavatar.io/tomtom.com",
         highlights: [
             "Developed Map Quality Specification using GPS probe data — 80% improvement in map corrections.",
             "Developed public API managed through APIGEE to report Map anomalies in TomTom Maps.",
@@ -121,6 +124,7 @@ export const experience = [
         current: false,
         color: "from-orange-500 to-amber-400",
         icon: "📱",
+        logo: "https://unavatar.io/amdocs.com",
         highlights: [
             "Enhanced Accounts and Collectibles application for telecom clients.",
             "Upgraded Java versions from JDK 5 to JDK 7.",
@@ -135,6 +139,7 @@ export const experience = [
         current: false,
         color: "from-pink-500 to-rose-400",
         icon: "⚙️",
+        logo: "https://unavatar.io/mindtree.com",
         highlights: [
             "Analyzed change requests and performed impact analysis.",
             "Implemented an efficient bulk insurance quote creation process.",

@@ -2,6 +2,25 @@ import { useState } from 'react';
 import { experience } from '../data/portfolioData';
 import { useInView } from '../hooks/useInView';
 
+const CompanyLogo = ({ logo, icon, name, className = "" }) => {
+    const [error, setError] = useState(false);
+
+    if (logo && !error) {
+        return (
+            <div className={`relative flex items-center justify-center bg-white p-1 rounded-lg ${className}`}>
+                <img
+                    src={logo}
+                    alt={`${name} logo`}
+                    className="w-full h-full object-contain"
+                    onError={() => setError(true)}
+                />
+            </div>
+        );
+    }
+
+    return <span className={`text-2xl ${className}`}>{icon}</span>;
+};
+
 export default function Experience() {
     const [expanded, setExpanded] = useState(0);
     const [ref, inView] = useInView();
@@ -29,8 +48,8 @@ export default function Experience() {
                                 key={exp.company}
                                 onClick={() => setExpanded(i)}
                                 className={`w-full text-left px-4 py-3 rounded-xl transition-all duration-300 border ${expanded === i
-                                        ? 'glass border-sky-500/40 shadow-lg shadow-sky-500/10'
-                                        : 'border-transparent hover:bg-white/5'
+                                    ? 'glass border-sky-500/40 shadow-lg shadow-sky-500/10'
+                                    : 'border-transparent hover:bg-white/5'
                                     }`}
                                 style={{
                                     opacity: inView ? 1 : 0,
@@ -39,7 +58,12 @@ export default function Experience() {
                                 }}
                             >
                                 <div className="flex items-center gap-3">
-                                    <span className="text-2xl">{exp.icon}</span>
+                                    <CompanyLogo
+                                        logo={exp.logo}
+                                        icon={exp.icon}
+                                        name={exp.company}
+                                        className="w-10 h-10 flex-shrink-0"
+                                    />
                                     <div>
                                         <div className={`font-semibold text-sm ${expanded === i ? 'text-white' : 'text-slate-300'}`}>
                                             {exp.company}
@@ -68,8 +92,13 @@ export default function Experience() {
                                     {/* Header */}
                                     <div className="flex items-start justify-between mb-6">
                                         <div>
-                                            <div className="flex items-center gap-2 mb-1">
-                                                <span className="text-2xl">{exp.icon}</span>
+                                            <div className="flex items-center gap-3 mb-1">
+                                                <CompanyLogo
+                                                    logo={exp.logo}
+                                                    icon={exp.icon}
+                                                    name={exp.company}
+                                                    className="w-12 h-12"
+                                                />
                                                 <h3
                                                     className={`font-display text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r ${exp.color}`}
                                                 >
