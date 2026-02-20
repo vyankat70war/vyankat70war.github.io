@@ -29,7 +29,7 @@ export default function Contact() {
                 </svg>
             ),
             label: 'LinkedIn',
-            value: 'linkedin.com/in/vyankat-sattarwar',
+            value: 'linkedin.com/in/vyankat-sattarwar-9b854217',
             href: profile.linkedin,
             color: 'from-blue-600 to-indigo-600',
         },

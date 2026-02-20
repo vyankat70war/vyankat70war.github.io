@@ -5,7 +5,7 @@ export const profile = {
     subtitle: "Cloud & Distributed Systems Leader",
     phone: "+91 8147379694",
     email: "sattarwar.vyankat@gmail.com",
-    linkedin: "https://linkedin.com/in/vyankat-sattarwar",
+    linkedin: "https://www.linkedin.com/in/vyankat-sattarwar-9b854217/",
     location: "Pune, Maharashtra, India",
     yearsOfExperience: 13,
     summary:
