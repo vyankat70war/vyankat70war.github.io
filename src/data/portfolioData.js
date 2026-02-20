@@ -142,6 +142,7 @@ export const experience = [
 ];
 
 export const achievements = [
+    { title: "Nominated: Continuous Improvement Award", org: "Vanderlande", year: "2025", icon: "🚀", logo: "https://unavatar.io/vanderlande.com" },
     { title: "Hackathon Winner", org: "TomTom", year: "2018", icon: "🏆", logo: "https://unavatar.io/tomtom.com" },
     { title: "Hackathon Runner-Up", org: "TomTom", year: "2019", icon: "🥈", logo: "https://unavatar.io/tomtom.com" },
     { title: "Promising Talent Award", org: "Amdocs", year: "2016", icon: "⭐", logo: "https://unavatar.io/amdocs.com" },
