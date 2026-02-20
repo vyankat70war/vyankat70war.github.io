@@ -1,15 +1,15 @@
 // All portfolio data extracted from the resume PDF
 export const profile = {
     name: "Vyankat Sattarwar",
-    title: "Software Craftsman",
-    subtitle: "Principal Software Architect & Engineering Specialist",
+    title: "Software Architect",
+    subtitle: "Cloud & Distributed Systems Leader",
     phone: "+91 8147379694",
     email: "sattarwar.vyankat@gmail.com",
     linkedin: "https://linkedin.com/in/vyankat-sattarwar",
     location: "Pune, Maharashtra, India",
     yearsOfExperience: 13,
     summary:
-        "Solutions-oriented professional with 13+ years of remarkable background in overseeing all aspects of the Software Development Life Cycle (SDLC) from project conceptualization and development to implementation and maintenance. Proficient in utilizing a wide variety of programs and tools to provide high-quality and cost-effective systems to boost organizational efficiency and productivity. Possesses clean coding and testing skills to deliver business-oriented applications.",
+        "Visionary Software Architect with over 13 years of enterprise experience in driving digital transformation, cloud strategy, and large-scale system modernization. Proven track record in orchestrating high-performance architectures, optimizing cloud infrastructure costs, and leading globally distributed engineering teams. Expert in microservices, enterprise observability, and strategic technical roadmaps that align business goals with cutting-edge technological solutions.",
 };
 
 export const skills = [
@@ -32,6 +32,9 @@ export const skills = [
     { name: "Kibana", category: "observability" },
     { name: "Oracle", category: "database" },
     { name: "PostgreSQL", category: "database" },
+    { name: "NoSQL", category: "database" },
+    { name: "Python", category: "core" },
+    { name: "GraphQL", category: "api" },
     { name: "Angular", category: "core" },
     { name: "Databricks", category: "data" },
     { name: "APIGEE", category: "api" },
@@ -57,7 +60,7 @@ export const skillCategories = [
 
 export const experience = [
     {
-        role: "Software Engineering Specialist",
+        role: "Architect",
         company: "Vanderlande",
         location: "Pune",
         period: "May 2023 – Present",
@@ -66,18 +69,14 @@ export const experience = [
         icon: "🏗️",
         logo: "https://unavatar.io/vanderlande.com",
         highlights: [
-            "Understanding and designing services based on stakeholder requirements.",
-            "Working with stakeholders for third-party API integrations.",
-            "Proposing use of Azure Cloud services, monitoring cost, and suggesting ways to reduce running costs.",
-            "Creating proof of concepts out of Azure managed services which fit proposed solutions.",
-            "Implemented logging and monitoring solutions using ELK stack, used by all deployed services.",
-            "Used Spring Cloud modules for implementing Spring Boot microservices, including tracing, monitoring, and gateway modules.",
-            "Managed infrastructure using Terraform.",
-            "Created CI/CD pipelines using Bamboo and Bitbucket.",
+            "Directed the design of scalable Spring Boot microservices and complex third-party API integrations.",
+            "Defined the Azure cloud roadmap, delivering PoCs and implementing proactive cost-optimization frameworks.",
+            "Architected a centralized logging and monitoring platform using the ELK stack and Spring Cloud across all deployed services.",
+            "Championed IaC and CI/CD standards utilizing Terraform, Bamboo, and Bitbucket.",
         ],
     },
     {
-        role: "Consultant",
+        role: "Consultant / Technical Lead",
         company: "Sincrodigital",
         location: "Pune",
         period: "Feb 2021 – Apr 2023",
@@ -86,19 +85,14 @@ export const experience = [
         icon: "💡",
         logo: "https://unavatar.io/sincrodigital.com",
         highlights: [
-            "Collaborated with cross-functional teams to develop solutions meeting needs of all stakeholders.",
-            "Conducted customer interviews to identify areas for improvement.",
-            "Migrated application infrastructure to AWS cloud following lift-and-shift methodology.",
-            "Re-architected legacy applications on latest tech stack — achieved 50% improvement in application load time.",
-            "Migrated on-premise database to AWS cloud with minimal downtime.",
-            "Led a Cloud-Native application development initiative.",
-            "Developed a microservices architecture improving system modularity and reducing dependencies.",
-            "Led a team of software engineers to successfully deliver a major project on time and within budget.",
-            "Conducted code reviews and mentored junior developers.",
+            "Spearheaded the transition to a microservices architecture, reducing dependencies and improving application load times by 50%.",
+            "Directed seamless on-premise to AWS cloud migrations (infrastructure and databases) utilizing lift-and-shift methodologies with minimal downtime.",
+            "Led cross-functional engineering teams, enforcing technical standards through rigorous code reviews and mentorship.",
+            "Translated client requirements into scalable technical solutions through direct consultation and data-driven insights.",
         ],
     },
     {
-        role: "Senior Software Engineer",
+        role: "Senior Software Developer",
         company: "TomTom",
         location: "Pune",
         period: "Aug 2016 – Feb 2021",
@@ -107,13 +101,10 @@ export const experience = [
         icon: "🗺️",
         logo: "https://unavatar.io/tomtom.com",
         highlights: [
-            "Developed Map Quality Specification using GPS probe data — 80% improvement in map corrections.",
-            "Developed public API managed through APIGEE to report Map anomalies in TomTom Maps.",
-            "Automated the process of converting raw data into Points of Interest (POI) and entry points.",
-            "Enabled places search using Augmented Reality via Wikitude.",
-            "Implemented navigation using better network availability along the route.",
-            "Categorized map issues using Natural Language Processing (NLP).",
-            "Implemented API security and SSO using Spring Security — OAuth and SAML.",
+            "Architected enterprise API security and SSO frameworks using Spring Security, OAuth, SAML, and Apigee.",
+            "Engineered automated data pipelines for GPS probe data and POIs, driving an 80% increase in essential map corrections.",
+            "Integrated NLP for issue categorization and Augmented Reality (Wikitude) for advanced place searches.",
+            "Optimized core navigation algorithms dynamically based on real-time network availability.",
         ],
     },
     {
