@@ -12,6 +12,7 @@ const categoryColors = {
     api: 'text-pink-400 border-pink-400/30 bg-pink-400/10 hover:bg-pink-400/20',
     security: 'text-red-400 border-red-400/30 bg-red-400/10 hover:bg-red-400/20',
     ai: 'text-fuchsia-400 border-fuchsia-400/30 bg-fuchsia-400/10 hover:bg-fuchsia-400/20',
+    data: 'text-teal-400 border-teal-400/30 bg-teal-400/10 hover:bg-teal-400/20',
 };
 
 const defaultColor = 'text-slate-300 border-slate-500/30 bg-white/5 hover:bg-white/10';
@@ -44,8 +45,8 @@ export default function Skills() {
                             key={key}
                             onClick={() => setActiveCategory(key)}
                             className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-all duration-200 ${activeCategory === key
-                                    ? 'bg-gradient-to-r from-sky-500 to-violet-600 text-white border-transparent shadow-lg shadow-sky-500/25'
-                                    : 'glass glass-hover text-slate-400 border-white/10'
+                                ? 'bg-gradient-to-r from-sky-500 to-violet-600 text-white border-transparent shadow-lg shadow-sky-500/25'
+                                : 'glass glass-hover text-slate-400 border-white/10'
                                 }`}
                         >
                             {label}
