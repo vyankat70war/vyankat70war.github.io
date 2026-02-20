@@ -1,5 +1,25 @@
+import { useState } from 'react';
 import { achievements, education, languages, hobbies } from '../data/portfolioData';
 import { useInView } from '../hooks/useInView';
+
+const CompanyLogo = ({ logo, icon, name, className = "" }) => {
+    const [error, setError] = useState(false);
+
+    if (logo && !error) {
+        return (
+            <div className={`relative flex items-center justify-center bg-white p-1 rounded-lg ${className}`}>
+                <img
+                    src={logo}
+                    alt={`${name} logo`}
+                    className="w-full h-full object-contain"
+                    onError={() => setError(true)}
+                />
+            </div>
+        );
+    }
+
+    return <span className={`text-3xl flex-shrink-0 ${className}`}>{icon}</span>;
+};
 
 export default function Achievements() {
     const [ref, inView] = useInView();
@@ -33,7 +53,12 @@ export default function Achievements() {
                                         transition: `all 0.5s ease ${i * 150}ms`,
                                     }}
                                 >
-                                    <span className="text-3xl">{ach.icon}</span>
+                                    <CompanyLogo
+                                        logo={ach.logo}
+                                        icon={ach.icon}
+                                        name={ach.org}
+                                        className="w-12 h-12"
+                                    />
                                     <div>
                                         <div className="font-semibold text-white text-sm">{ach.title}</div>
                                         <div className="text-slate-400 text-xs">{ach.org} · {ach.year}</div>
@@ -49,7 +74,15 @@ export default function Achievements() {
                             <span>🎓</span> Education
                         </h3>
                         <div className="p-4 rounded-xl bg-gradient-to-br from-sky-500/10 to-violet-500/10 border border-sky-500/20">
-                            <div className="font-bold text-white mb-1">{education.degree}</div>
+                            <div className="flex items-center gap-3 mb-3">
+                                <CompanyLogo
+                                    logo={education.logo}
+                                    icon="🎓"
+                                    name={education.institution}
+                                    className="w-12 h-12"
+                                />
+                                <div className="font-bold text-white text-sm">{education.degree}</div>
+                            </div>
                             <div className="text-sky-400 text-sm font-medium mb-2">{education.institution}</div>
                             <div className="text-slate-400 text-sm flex items-center gap-1">
                                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -60,16 +93,18 @@ export default function Achievements() {
                         </div>
 
                         {/* Languages */}
-                        <h4 className="font-semibold text-slate-300 mt-6 mb-3 text-sm">Languages Spoken</h4>
-                        <div className="flex gap-2 flex-wrap">
-                            {languages.map((lang) => (
-                                <span
-                                    key={lang}
-                                    className="px-3 py-1 rounded-full text-xs font-medium bg-violet-400/10 text-violet-300 border border-violet-400/20"
-                                >
-                                    {lang}
-                                </span>
-                            ))}
+                        <div className="mt-6">
+                            <h4 className="font-semibold text-slate-300 mb-3 text-sm">Languages Spoken</h4>
+                            <div className="flex gap-2 flex-wrap">
+                                {languages.map((lang) => (
+                                    <span
+                                        key={lang}
+                                        className="px-3 py-1 rounded-full text-xs font-medium bg-violet-400/10 text-violet-300 border border-violet-400/20"
+                                    >
+                                        {lang}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                     </div>
 

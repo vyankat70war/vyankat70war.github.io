@@ -151,14 +151,15 @@ export const experience = [
 ];
 
 export const achievements = [
-    { title: "Hackathon Winner", org: "TomTom", year: "2018", icon: "🏆" },
-    { title: "Hackathon Runner-Up", org: "TomTom", year: "2019", icon: "🥈" },
-    { title: "Promising Talent Award", org: "Amdocs", year: "2016", icon: "⭐" },
+    { title: "Hackathon Winner", org: "TomTom", year: "2018", icon: "🏆", logo: "https://unavatar.io/tomtom.com" },
+    { title: "Hackathon Runner-Up", org: "TomTom", year: "2019", icon: "🥈", logo: "https://unavatar.io/tomtom.com" },
+    { title: "Promising Talent Award", org: "Amdocs", year: "2016", icon: "⭐", logo: "https://unavatar.io/amdocs.com" },
 ];
 
 export const education = {
     degree: "B.Tech in Computer Science and Engineering",
     institution: "Walchand College of Engineering, Sangli",
+    logo: "https://unavatar.io/walchandsangli.ac.in",
     period: "2008 – 2012",
 };
 
